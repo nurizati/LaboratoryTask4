@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--NUR FATIN FAIQAH BINTI ABD RAHIM - 18DDT19F1104-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One-Off Cash Assistance status</title>
+    <link rel="stylesheet" type="text/css" href="coding.css">
+    <script src="coding.js"></script>
+</head>
+
+<body>
+    <center>
+        <table border="1">
+            <form name="Myform" action="" method="post" enctype="multipart/form-data" onsubmit="return checkstatus();">
+                <tr>
+                    <th colspan="2" bgcolor="lightgreen">ONE-OFF CASH ASSISTANCE</th>
+                </tr>
+                <tr>
+                    <td>NAME</td>
+                    <td><input type="text" name="customername" id="name" placeholder="Insert Your 
+Name" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>CATEGORY</td>
+                    <td> <input type="radio" id="B40" value="B40" name="category" required> B40 <input type="radio"
+                            id="T20" value="T20" name="category" required> T20 <input type="radio" id="M40" value="M40"
+                            name="category" required> M40</td>
+                </tr>
+                <tr>
+                    <td>PARENT'S STATUS</td>
+                    <td> <input type="checkbox" id="Mother" value="Mother" name="Status"> No Mother
+                        <input type="checkbox" id="Father" value="Father" name="Status"> No Father
+                    </td>
+                </tr>
+                <th colspan="2">
+                    <input type="submit" value="Check Status" onclick="checkstatus();">
+                    <input type="reset" value="Reset">
+                </th>
+                </tr>
+            </form>
+        </table>
+    </center>
+</body>
+
+</html>
