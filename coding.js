@@ -3,6 +3,12 @@ function checkstatus() {
     category1 = document.getElementById("B40").value;
     category2 = document.getElementById("T20").value;
     category3 = document.getElementById("M40").value;
+
+    if (customername === ''){
+        alert ('please insert your name')
+    }else{
+
+    
     //B40 Category 1
     if (document.getElementById("B40").checked) {
         if (document.getElementById("Mother").checked &&
@@ -51,4 +57,5 @@ function checkstatus() {
     else
         alert("Please Complete The Form!");
     return false;
+}
 }
